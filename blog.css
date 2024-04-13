@@ -1,0 +1,19 @@
+/* blog-css */
+.articles {
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 1px solid rgb(241, 27, 27);
+}
+
+.articles .main-content{
+    width: 70%;
+    float: left;
+    border: 1px solid rgb(51, 17, 191);
+}
+
+.articles .sidebar{
+    width: 30%;
+    float: left;
+    border: 1px dahsed rgb(35, 205, 83);
+    height: 300px;
+}
