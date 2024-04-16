@@ -1,26 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>BLOG</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-    <header>
-
-    </header>
+  <body>
+    <header></header>
     <nav>
-
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
     </nav>
     <main>
+      <!-- content  -->
+      <div class="content clearfix">
+        <!-- main-content -->
 
+        <div class="main-content">
+          <h1 class="recent-post-title">NEWS</h1>
+          <div class="post">
+            <img src="images/ronnie.jpeg" alt="" class="post-image" />
+            <div class="post-preview">
+              <h1><a href="#">What happened to Ronnie Coleman?</a></h1>
+              <i class="far fa-user"></i>
+              <span>Hariraj Karnan</span>
+              &nbsp;
+              <i class="far calender"></i>
+              <span>Mar 11, 2019</span>
+              <p class="preview-text">
+                The eight-time Mr. Olympia and living legend many regard as the
+                GOAT of bodybuilding now, at 59, walks with two crutches or is
+                propelled in a wheelchair. What caused his injuries? Why have
+                multiple spinal surgeries failed? Can he still fully recover?
+                And what lessons can we learn from his health concerns as well
+                as his positive attitude? “Yeah buddy!” In a tale of heavy
+                metal, pain, and perseverance,
+              </p>
+              <a href="#" class="btn read-more">Read More</a>
+            </div>
+          </div>
+
+          <div class="post">
+            <img src="images/diet.jpeg" alt="" class="post-image" />
+            <div class="post-preview">
+              <h1><a href="#">why people need diet in their daily life?</a></h1>
+              <i class="far fa-user"></i>
+              <span>Dinesh</span>
+              &nbsp;
+              <i class="far calender"></i>
+              <span>Mar 11, 2019</span>
+              <p class="preview-text">
+                A balanced diet is essential for maintaining optimal health and
+                well-being. By providing the body with a variety of nutrients,
+                including vitamins, minerals, carbohydrates, proteins, and fats,
+                a balanced diet supports essential bodily functions and energy
+                requirements. Moreover, it plays a crucial role in managing
+                weight, preventing diseases such as heart disease, diabetes, and
+                certain cancers, and promoting proper growth and development,
+                particularly in children and adolescents. Additionally, dietary
+                choices can impact mental health, with evidence suggesting that
+                a diet rich in fruits, vegetables.
+              </p>
+              <a href="#" class="btn read-more">Read More</a>
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="images/A Brief History Of Yoga.jpeg"
+              alt=""
+              class="post-image"
+            />
+            <div class="post-preview">
+              <h1><a href="#">What are the benefits of yoga?</a></h1>
+              <i class="far fa-user"></i>
+              <span>Arun</span>
+              &nbsp;
+              <i class="far calender"></i>
+              <span>Mar 11, 2019</span>
+              <p class="preview-text">
+                Yoga offers a holistic approach to well-being, providing a
+                myriad of benefits for both the body and mind. Through a
+                combination of physical postures, breath work, and mindfulness
+                practices, yoga enhances flexibility, strength, and balance
+                while simultaneously promoting relaxation and stress reduction.
+                Regular practice not only improves physical fitness by
+                increasing flexibility and strength but also cultivates mental
+                clarity, focus, and emotional resilience.
+              </p>
+              <a href="#" class="btn read-more">Read More</a>
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="images/Smoking and Chronic Lung Disease_ What To Know.jpeg"
+              alt=""
+              class="post-image"
+            />
+            <div class="post-preview">
+              <input id="chi" type="checkbox">
+              <h1><a href="#">why the people have to quite smoking?</a></h1>
+              <i class="far fa-user"></i>
+              <span>Krishna</span>
+              &nbsp;
+              <i class="far calender"></i>
+              <span>Mar 11, 2019</span>
+              <p class="preview-text">
+                Quitting smoking is paramount for safeguarding one's health and
+                well-being. Smoking poses a significant risk to health,
+                contributing to the development of life-threatening conditions
+                such as lung cancer, heart disease, and respiratory illnesses.
+                By quitting smoking, individuals can dramatically reduce their
+                risk of these diseases and experience improvements in
+                respiratory function, cardiovascular health, and overall
+                physical fitness. 
+              </p>
+              <a href="#" class="btn read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- main-content -->
+        <div class="sidebar">
+          <div class="section search">
+            <h2 class="section-title">search</h2>
+            <form action="index.html" method="post">
+              <input
+                type="text"
+                name="search-term"
+                class="text-input"
+                placeholder="search"
+              />
+            </form>
+          </div>
+
+          <div class="section topics">
+            <h2 class="section-title">Topics</h2>
+            <ul>
+              <li><a href="#">poems</a></li>
+              <li><a href="#">quotes</a></li>
+              <li><a href="#">Fiction</a></li>
+              <li><a href="#">Biography</a></li>
+              <li><a href="#">Motivation</a></li>
+              <li><a href="#">Inspiration</a></li>
+              <li><a href="#">Life Lessons</a></li>
+              <li><a href="#">Diet</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-
+    <!-- footer start -->
+    <footer class="footer-nav">
+      <div class="nav-column">
+        <h3>Gym</h3>
+        <ul>
+          <li>Gym Near Me</li>
+          <li>Gyms in Mumbai</li>
+          <li>Strength Training</li>
+          <li>Core Exercises</li>
+        </ul>
+      </div>
+      <div class="nav-column">
+        <h3>Yoga</h3>
+        <ul>
+          <li>Face Yoga</li>
+          <li>Yoga For Stress Relief</li>
+          <li>Surya Namaskar for Beginners</li>
+          <li>Yoga Asanas</li>
+        </ul>
+      </div>
+      <div class="nav-column">
+        <h3>Exercises</h3>
+        <ul>
+          <li>Chest Exercises</li>
+          <li>Belly Fat Loss Exercise</li>
+          <li>Back Exercises at Home</li>
+          <li>Mobility Exercises</li>
+        </ul>
+      </div>
+      <div class="nav-column">
+        <h3>Meditation</h3>
+        <ul>
+          <li>Meditation Music</li>
+          <li>Yoga Nidra</li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+    <!-- footer end -->
+  </body>
 </html>
