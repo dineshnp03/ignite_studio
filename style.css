@@ -4,6 +4,15 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+body{
+    margin: 0;
+    font-family: "open-sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
 
 /* Home page starts */
 .Home .Hero-cont {
@@ -15,7 +24,7 @@
 }
 
 
-#mobile-nav{
+#mobile-nav {
     display: none;
 }
 
@@ -50,18 +59,20 @@ nav ul li a:hover {
 .subscription-cont {
 
     display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        background-color: #2c3333;
-        margin: 2rem auto;
-        width: 35%;
-        border-radius: 8px;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #2c3333;
+    margin: 2rem auto;
+    width: 35%;
+    border-radius: 8px;
 }
 
-.color-fff{
-color: #fff;
+.color-fff {
+    color: #fff;
 }
-.subscription-header, .subscription-tagline {
+
+.subscription-header,
+.subscription-tagline {
     margin: 0;
 }
 
@@ -75,8 +86,8 @@ color: #fff;
 }
 
 .subscription-form-cont form input[type="email"] {
- padding: 1rem;
- border-radius: 8px;
+    padding: 1rem;
+    border-radius: 8px;
 
 }
 
@@ -99,26 +110,93 @@ color: #fff;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
+.category-card-cont {
+    display: flex;
+}
+
+.category-card-cont .container {
+    width: 22%;
+    /* Adjusted to 25% for four containers in one row */
+    position: relative;
+}
+
+.category-card-cont .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+}
+
+.category-card-cont .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2C3333;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+    opacity: .5;
+}
+
+.category-card-cont .container:hover .overlay {
+    transform: scale(1);
+}
+
+.category-card-cont .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust this breakpoint as needed */
+    .category-card-cont .container {
+        width: 50%;
+        /* Change to 50% for two containers in one row */
+    }
+}
+
+@media (max-width: 1470px) {
+
+    /* Adjust this breakpoint as needed */
+    .category-card-cont {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* Adjust this breakpoint as needed */
+    .category-card-cont .text {
+        font-size: 15px;
+    }
+}
+
 
 /* Home Page ends */
 
 /* About Us */
 
-body {
-    font-family: Arial, sans-serif;
+.about-us body {
     margin: 0;
     padding: 0;
     background-color: #E7F6F2;
 }
 
-h2 {
+.about-us h2 {
     font-size: 2em;
     font-family: 'Roboto', 'Gabriola', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-
 
 nav a {
     letter-spacing: 1px;
@@ -137,14 +215,14 @@ nav ul li {
     display: inline-block;
 }
 
-.container {
+.about-us .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-#banner {
+.about-us #banner {
     background-image: url("images/pexels-cottonbro-studio-4761663.jpg");
     width: 100%;
     height: 100vh;
@@ -152,14 +230,14 @@ nav ul li {
     background-position: top;
 }
 
-.circle-icons {
+.about-us .circle-icons {
     display: flex;
     justify-content: center;
     gap: 100px;
     margin-top: 30px;
 }
 
-.circle-icon {
+.about-us .circle-icon {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -170,26 +248,26 @@ nav ul li {
     align-items: center;
 }
 
-.circle-icon img {
+.about-us .circle-icon img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.photo-grid {
+.about-us .photo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin-top: 20px;
 }
 
-.photo-box {
+.about-us .photo-box {
     width: 100%;
     padding-bottom: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.photo-box img {
+.about-us .photo-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -198,27 +276,30 @@ nav ul li {
     left: 0;
 }
 
-.description {
+.about-us .description {
     margin-top: 20px;
     max-width: 1000px;
     text-align: justify;
 }
 
-.testimonials {
+.about-us .testimonials {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
 }
 
-.testimonial-box {
-    width: calc(33.33% - 20px);
+.about-us .testimonial-box {
     padding: 20px;
-    background-color: #f0f0f0;
-    transform: rotate(-3deg);
+    background-color: #2C3333;
+    transform: rotate(0deg);
+    color: #fff;
+    border-radius: 6px;
 }
 
-
+.about-us .testimonial-box:hover {
+    transform: rotate(-3deg);
+}
 
 /* Services Page CSS  - Start*/
 
@@ -561,6 +642,136 @@ tbody tr:nth-child(even) {
 
 
 
+/* Contact us page starts */
+
+/* Style for the image after navigation */
+.image-after-nav {
+    text-align: center;
+    /* Center the image horizontally */
+    margin-top: 20px;
+    /* Adjust margin-top to create space between nav and image */
+}
+
+.image-after-nav img {
+    max-width: 90%;
+    /* Ensure the image doesn't exceed its container's width */
+    border-radius: 10px;
+    /* Apply border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Apply box shadow for depth effect */
+}
+
+
+/* Style for main content */
+.contact-us main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust max-width as needed */
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+.contact-info div{
+    width: 100%;
+}
+
+.contact-info .location,
+.contact-info .email,
+.contact-info .phone {
+    background-color: #f0f0f0;
+    /* Background color for the container */
+    padding: 20px;
+    /* Padding to create space inside the container */
+    border-radius: 10px;
+    /* Rounded corners for the container */
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info .info-item i {
+    margin-right: 10px;
+}
+
+.contact-us .Hero-cont{
+    background-image: url("images/pexels-max-vakhtbovycn-7031705.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+}
+
+
+/* Style for map section */
+.map {
+    width: 100%;
+    max-width: 800px;
+    /* Adjust max-width as needed */
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Style for message form section */
+.message-form {
+    width: 100%;
+    max-width: 800px;
+    /* Adjust max-width as needed */
+    margin-top: 20px;
+}
+
+.message-form h2 {
+    margin-bottom: 20px;
+}
+
+.message-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-form label {
+    margin-bottom: 10px;
+}
+
+.message-form input,
+.message-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.message-form button:hover {
+    background-color: #555;
+}
+
+/* Contact us page ends */
 
 
 /* footer */
@@ -599,17 +810,17 @@ tbody tr:nth-child(even) {
 
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
-     nav ul li {
+    nav ul li {
         font-size: 12px;
     }
 
-     nav ul {
+    nav ul {
         width: 100%;
         padding: 0;
         text-align: center;
     }
 
-    
+
     .services .membershipContainer {
         gap: 1rem;
     }
@@ -622,17 +833,17 @@ tbody tr:nth-child(even) {
 
 
 @media only screen and (max-width: 768px) {
-    #desktop-nav{
+    #desktop-nav {
         display: none;
     }
 
-    #mobile-nav{
+    #mobile-nav {
         display: flex;
         flex-direction: column;
         background-color: #2C3333;
     }
 
-    .subscription-cont{
+    .subscription-cont {
         width: 80%;
     }
 
@@ -721,6 +932,11 @@ tbody tr:nth-child(even) {
     margin: 1rem auto ;
 }
 
+    .services h1 {
+        top: calc(100vh - 50%);
+    }
+
+   
 
 }
 
@@ -783,5 +999,11 @@ tbody tr:nth-child(even) {
     .services .membershipContainer {
         flex-direction: column;
     }
-  
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .contact-info div {
+        width: 90%;
+    }
 }
