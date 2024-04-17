@@ -206,13 +206,16 @@ nav ul li {
 .services .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/pexels-pixabay-260447.jpg');
     width: 100%;
-    height: 500px;
+    height: 100vh;
     color: #FFF;
     background-position: top;
     background-size: cover;
+}
+.services h1 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    position: relative;
+    top: calc(100vh - 65%);
 }
 
 
@@ -265,6 +268,37 @@ nav ul li {
   .services .service-context:has(h2, p) {
     color: white !important;
   }
+
+
+  /* Table CSS */
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+  /* Table CSS */
 
 
 
@@ -527,7 +561,7 @@ margin-bottom: 20px;
             100%;
     }
 
-    .Home nav {
+    nav {
         flex-direction: column;
     }
 
@@ -568,4 +602,59 @@ margin-bottom: 20px;
         padding: 1rem;
     }
 
+
+}
+
+/* For mobile Screens */
+@media screen and (max-width: 600px) {
+    /* Table CSS */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        display: block;
+        text-align: left;
+        min-height: 1.25em;
+    }
+
+    th {
+        background-color: #2c3333;
+        color: white;
+    }
+
+
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    tbody tr {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    tbody td {
+        display: block;
+        text-align: left;
+    }
+
+    thead th {
+        display: block;
+        text-align: left;
+    }
+    /* Table CSS */
 }
