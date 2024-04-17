@@ -1,4 +1,10 @@
 
+/* Primary font : Montserrat
+   Secondary Font: Open Sans 
+   Resource : Google Font - https://fonts.google.com/
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 /* Home page starts */
 .Home .Hero-cont{
@@ -36,7 +42,6 @@ nav ul li a:hover{
 
 
 /* Home Page ends */
-
 
 /* About Us */
 
@@ -155,6 +160,44 @@ nav ul li {
 }
 
 
+
+/* Services Page CSS  - Start*/
+
+.text-center {
+    text-align: center;
+}
+
+.subtitle-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.service-info {
+    display: flex;
+    align-items: center;
+}
+
+.membershipContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.membershipCard {
+    height: 100%;
+    width: auto;
+}
+/* Services Page CSS - End */
+
 /* blog-css starts */
 .Hero-cont{
     height: 100vh;
@@ -162,6 +205,12 @@ nav ul li {
     background-image:url("/images/banner-blog.jpg");
     background-size: cover;
     background-position: center;
+}
+/* blog-css */
+.content {
+    width: 90%;
+    margin: 30px auto 30px;
+    /* border: 1px solid rgb(6, 6, 6); */
 }
 
 .blog{
