@@ -42,6 +42,58 @@ nav ul li a:hover {
     transition: .3s;
 }
 
+.subscription-cont {
+
+    display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: #2c3333;
+        margin: 2rem auto;
+        width: 35%;
+        border-radius: 8px;
+}
+
+.color-fff{
+color: #fff;
+}
+.subscription-header, .subscription-tagline {
+    margin: 0;
+}
+
+.subscription-form-cont form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.subscription-form-cont {
+    margin: 1rem;
+}
+
+.subscription-form-cont form input[type="email"] {
+ padding: 1rem;
+ border-radius: 8px;
+
+}
+
+.subscription-form-cont form button {
+    color: #F0ECE3;
+    border: 1px solid #F0ECE3;
+    background-color: #2C3333;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    width: fit-content;
+    justify-self: center;
+    cursor: pointer;
+
+}
+
+.subscription-form-cont form button:hover {
+    background-color: #F0ECE3;
+    color: #2C3333;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
 
 /* Home Page ends */
 
@@ -534,14 +586,19 @@ tbody tr:nth-child(even) {
 
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
-    .Home nav ul li {
+     nav ul li {
         font-size: 12px;
     }
 
-    .Home nav ul {
+     nav ul {
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+
+    
+    .services .membershipContainer {
+        gap: 1rem;
     }
 }
 
@@ -550,6 +607,10 @@ tbody tr:nth-child(even) {
     .Home .Hero-cont {
         background-image: none;
         height: fit-content;
+    }
+
+    .subscription-cont{
+        width: 80%;
     }
 
     #banner {
@@ -608,9 +669,6 @@ tbody tr:nth-child(even) {
         margin-top: -10px;
     }
 
-    .services .membershipContainer {
-        flex-direction: column;
-    }
 
     .services .service-info {
         flex-direction: column;
@@ -678,4 +736,8 @@ tbody tr:nth-child(even) {
     }
 
     /* Table CSS */
+
+    .services .membershipContainer {
+        flex-direction: column;
+    }
 }
