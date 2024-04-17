@@ -377,10 +377,19 @@ tbody tr:nth-child(even) {
 }
 
 /* blog-css */
+.blog .gridContainer {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+}
+
 .content {
     width: 90%;
     margin: 30px auto 30px;
-    /* border: 1px solid rgb(6, 6, 6); */
+}
+.blog .recent-post-title{
+    margin: 1rem 4rem;
 }
 
 .blog {
@@ -388,9 +397,7 @@ tbody tr:nth-child(even) {
 }
 
 .blog .content {
-    width: 90%;
-    margin: 30px auto 30px;
-    background-color: DFD3C3;
+    padding: 0%;
 }
 
 .blog .content .main-content {
@@ -406,16 +413,17 @@ tbody tr:nth-child(even) {
     background: #C7B198;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: white;
 }
 
 .blog .content .main-content .post .read-more {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    border: 1px solid green;
+    border: 1px solid #F0ECE3;
     background: transparent;
     border-radius: 8px;
-    color: green !important;
+    color: #F0ECE3 !important;
 }
 
 .blog .content .main-content .post .read-more:hover {
@@ -458,10 +466,14 @@ tbody tr:nth-child(even) {
     margin: 10px 0px;
 }
 
+.blog .content .sidebar .section .side-topics{
+    color: white;
+}
 .blog .chips-container {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .blog .chips {
@@ -542,11 +554,6 @@ tbody tr:nth-child(even) {
     font-family: 'lora', serif;
 }
 
-.blog .post-image {
-    width: 400px;
-    height: 400px;
-}
-
 /* blog page ends */
 
 
@@ -606,6 +613,11 @@ tbody tr:nth-child(even) {
     .services .membershipContainer {
         gap: 1rem;
     }
+
+.blog .gridContainer{
+    grid-template-columns: 600px 1fr;
+}
+
 }
 
 
@@ -682,6 +694,33 @@ tbody tr:nth-child(even) {
         padding: 1rem;
     }
 
+    .blog .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+}
+
+.blog .preview-text {
+    display: none;
+}
+.blog  .post-preview {
+    padding: 1rem;
+    float: left;
+    width: fit-content;
+}
+
+.blog .content .main-content .post{
+    height: 300px;
+}
+.blog .post-image {
+    display: none;
+}
+.blog .content .main-content .post .read-more {
+    display: flex;
+    width: fit-content;
+    margin: 1rem auto ;
+}
+
 
 }
 
@@ -744,4 +783,5 @@ tbody tr:nth-child(even) {
     .services .membershipContainer {
         flex-direction: column;
     }
+  
 }
